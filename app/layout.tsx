@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-import {ThemeProvider} from "../components/theme-provider"
+import Providers from "../components/ThemeProvider";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -13,10 +13,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
 export const metadata: Metadata = {
   title: "Rohith C Portfolio",
-  description: "Crafting seamless web experiences with expertise in both front-end design and back-end development",
+  description:
+    "Crafting seamless web experiences with expertise in both front-end design and back-end development",
 };
 
 export default function RootLayout({
@@ -29,14 +29,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-      <ThemeProvider
+        {/* <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-      >
-        {children}
-      </ThemeProvider>
+        > */}
+        <Providers>{children}</Providers>
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );
