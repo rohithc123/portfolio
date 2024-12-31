@@ -9,7 +9,7 @@ function RecentProjects() {
         A small selection of{" "}
         <span className="text-purple"> Recent Projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10 text-white">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-12 mt-10 text-white">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div
             key={id}
