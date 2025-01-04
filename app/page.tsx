@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import Image from "next/image";
 import Hero from "../components/Hero";
 import Grid from "../components/Grid";
@@ -10,6 +10,7 @@ import { navItems } from "@/data";
 import Footer from "../components/Footer";
 
 import dynamic from "next/dynamic";
+
 // const Hero = dynamic(() => import("../components/Hero"), { ssr: false });
 // const Grid = dynamic(() => import("../components/Grid"), { ssr: false });
 // const Experience = dynamic(() => import("../components/Experience"), {
