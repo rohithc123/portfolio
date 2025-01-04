@@ -9,7 +9,7 @@ import { FaHome } from "react-icons/fa";
 import { navItems } from "@/data";
 // import Footer from "../components/Footer";
 
-import { dynamic } from "next/dynamic";
+import  dynamic  from "next/dynamic";
 const Hero = dynamic(() => import("../components/Hero"));
 const Grid = dynamic(() => import("../components/Grid"));
 const Experience = dynamic(() => import("../components/Experience"));
