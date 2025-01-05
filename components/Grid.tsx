@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { BentoGrid } from "./ui/BentoGrid";
 import { BentoGridItem } from "./ui/BentoGrid";
